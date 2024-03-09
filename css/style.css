@@ -1,0 +1,718 @@
+/*
+PALETA DE CORES:
+
+PRIMARY-TEXT-COLOR: #291505;
+SECOND-TEXT-COLOR: #EBDACC;
+BACKGROUND-PRIMARY-COLOR: #FFFFFF;
+BACKGROUND-SECONDARY-COLOR: #B2784A;
+LAYOUT-COLOR: #E2C196;
+NAV E FOOTER COLOR: #8F542E;
+
+*/
+
+body{
+    background-color: #f5f3ed;
+    margin: 0;
+}
+
+main{
+    margin-top:100px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    margin-top:-100px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(87, 41, 11, 1);  
+    justify-content: space-between;
+    font-weight: 900;
+    font-size: 20px;
+    height: 100px;
+    border-radius: 1px;
+}
+
+nav ul{
+    display:flex;
+    width: 100%;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin:15%;
+}
+
+nav ul li, nav ul li a{
+    align-items: center;
+    top:0;
+    left:0;
+    color: rgba(240, 240, 240, 1);
+    justify-content: space-between;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+.retangulo {
+    width: 43px;
+    height: 2px;
+    background-color: rgba(178, 120, 74, 1);
+    border-radius: 1px;
+    margin:0 auto;
+}
+
+nav ul li#phone{
+    display:flex;
+}
+nav ul li#phone img{
+    width: auto;
+    padding-right: 5px;
+    margin-top:5px
+}
+
+nav ul li img#logo{
+    width: 43px;
+    height: 54.86px;
+}
+
+div.contatoContainer{
+    width: 100%;
+    height: 1100px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #f5f3ed;
+}
+div.contatoContent{
+    width: 90%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #f5f3ed;
+}
+
+div.contatoTitleContent{
+    width: 438px;
+    padding-left: 5px;
+    background: linear-gradient(to top, #fbc9a8 65%, #f5f3ed 35%);
+}
+
+p.contatoTitle{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+div.contatoInternalContent{
+    margin-top: 40px;
+    display: flex;
+    box-sizing: border-box;
+    height: 1000px;
+    background-color: #f5f3ed;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+div.holder {
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+div.contatoInformationDatas{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: #8f542e;
+}
+
+ul.contatoInfo {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+ul.contatoInfo li {    
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+ul.contatoInfo li p {
+    margin-left: 5px;
+}
+
+.divider {
+    border-top: 4px solid #b2784a;
+    margin: 20px 0; 
+    border-radius: 5px;
+  }
+
+div.contatoFormContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 25px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 15px; 
+    border-bottom-right-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+form.venhaConhecerBtn {
+    margin-bottom: 20px;
+}
+
+.contatoFormContainer input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    border: 1px solid #8f542e;
+    border-radius: 10px;
+  }
+
+  .contatoFormContainer input[type="submit"] {
+    background-color: #8f542e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+.mensagemInput {
+    height: 250px;
+}
+
+.normalInput {
+    height: 70px;
+}
+
+div.contatoLogo {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contatoLogo p {
+    margin-top: 15px;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+
+div.btnVenhaConhecer {
+    margin-top: 50px;
+}
+
+section.venhaConhecerMainContainer {
+    width: 100%;
+    height: 559px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('/images/senha-conhecer-background.jpeg');
+    background-size: 120%;
+    background-position: center; 
+    padding-left: 70px;
+    
+  }
+
+  section.venhaConhecerMainContainer h1 {
+    width: 589px;
+    color:#F0F0F0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 76px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+    padding-top: 60px;
+  }
+  section.venhaConhecerMainContainer p {
+    width: 514px;
+    color:#F0F0F0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+div.btnSobreNos {
+    margin-top: 20px;
+}
+
+section.sobreNosMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 486px;
+    padding-bottom: 50px;
+    background-color: #f5f3ed;
+}
+
+div.sobreNosdata {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+section.sobreNosMainContainer p {
+    width: 80%;
+    color: #1f0c00;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+div.sobreNosImg img {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 60px;
+    margin-right: 160px;
+}
+
+@media screen and (max-width: 980px) {
+    div.sobreNosImg img {
+        display: none;
+    }
+}
+
+
+div.sobreNosTitleContent{
+    display: flex;
+    box-sizing: border-box;
+    width: 230px;
+    padding-left: 5px;
+    background: linear-gradient(to top, #fbc9a8 55%, #f5f3ed 45%)
+}
+
+h3.sobreNosTitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    
+}
+
+footer{
+    width: 100%;
+    background: rgba(87, 41, 11, 1);
+    color: rgba(255, 218, 184, 1);
+    font-family: "Open Sans", sans-serif;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:16px;
+
+}
+div.footer-left{
+    text-align: left;
+    margin:10%;
+}
+div.footer-right{
+    text-align: right;
+    margin:10%;
+}
+
+.material-symbols-outlined {
+    margin-left: 25px;
+    font-weight: 800;
+}
+button.btn {
+    margin-top: 10px;
+    font-size:18px;
+    height: 57px;
+    width: 280px;
+    background-color: #8f542e;
+    font-weight: 800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    padding-left:32px;
+    border-radius: 5px;
+    display: flex; 
+    align-items: center; 
+  }
+
+  button.btn a {
+    text-decoration: none;
+    color: white;
+  }
+
+  button.btn:hover{
+    background-color: rgba(202, 142, 103, 1);
+  }
+
+  div.cafeteriaContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height: auto;
+    background-color: #7f451f;
+  }
+
+  div.cafeteriaContainer h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #F0F0F0;
+
+  }
+
+img.cafeOnda {
+    width: 100%;
+    margin-top: 120px;
+}
+
+.dividerCafe {
+    width: 160px;
+    border-top: 4px solid #b2784a;
+    border-radius: 10px;
+  }
+
+
+div.cafeteriaCarousel {
+    display: flex;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+div.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 345px;
+    height: 400px;
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+
+div.carousel-slide img {
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+div.carousel-slide h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1f0c00;
+}
+
+div.carousel-slide p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #1f0c00;
+    margin-top:5px;
+}
+
+div.mediaForMobile {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    background-color: #f5f3ed;
+    margin-top: 90px;
+}
+
+div.mediaForMobile h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #1F0C00;
+}
+
+div.mediaForMobile div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 228px;
+    height: 100px;
+}
+
+div.mediaForMobile img {
+    width: 50px;
+    height: 50px;
+}
+
+  .carousel-arrow {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    bottom: 64px;
+    margin-block: auto;
+    height: fit-content;
+    width: 48px;
+    background-color: white;
+    border: none;
+    font-size: 3rem;
+    padding: 0;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 100ms;
+  }
+  
+  .carousel-arrow:hover,
+  .carousel-arrow:focus {
+    opacity: 1;
+  }
+  
+  .carousel-arrow--prev {
+    left: 0;
+  }
+  
+  .carousel-arrow--next {
+    right: 0;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    padding-block: 16px 32px;
+    margin: 16px 48px;
+    overflow-x: auto;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    flex-flow: row nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel-container::-webkit-scrollbar {
+    height: 14px;
+    width: calc(100% - 48px);
+  }
+  
+  .carousel-container::-webkit-scrollbar-track {
+    background: #7f451f;
+  }
+  
+  .carousel-container::-webkit-scrollbar-thumb {
+    background: #fbc9a8;
+  }
+  
+  .carousel-container::-webkit-scrollbar-track-piece:start {
+    background: #fbc9a8;
+  }
+  
+  .carousel-slide {
+    flex: 1 0 20%;
+    aspect-ratio: 1;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    background-color: #bae;
+    scroll-snap-align: center;
+  }
+
+  /* Responsivity */
+  @media screen and (max-width: 500px) {
+    body{
+        background-color: white;
+    }
+    div.contatoContent{
+        background-color: white;
+    }
+    div.contatoContainer{
+        background-color: white;
+    }
+    div.btnSobreNos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.sobreNosMainContainer {
+        background-color: white;
+    }
+    div.sobreNosdata {
+        margin-top: 120px;
+        background-color: white;
+        padding-left: 20px;
+    }
+    div.sobreNosTitleContent{
+        width: 149px;
+        background: linear-gradient(to top, #fbc9a8 55%, #FFFFFF 45%)
+    }
+    div.mediaForMobile {
+        display: flex;
+        background-color: white;
+        }
+}
+
+@media (max-width: 600px) {
+    .carousel-slide {
+      flex: 1 0 90%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    nav ul li, nav ul li a, nav ul li #phone {
+        display: none !important;
+    }
+    nav{
+        height: 64px !important;
+    }
+    nav ul li#principal {
+        width: 100%;
+        display: flex !important;
+        justify-content: center;
+    }
+    nav ul li#principal img#logo {
+        width: 25px;
+        position: absolute;
+        left:0;
+        margin-left: 55px;
+    }
+    br#responsivo{
+        display: none;
+    }
+    footer{
+        display: inline-block !important;
+    }
+    div.footer-principal{
+        margin-left:10%;
+        margin-top:6%;
+        align-items: center;
+    }
+    div.footer-left{
+        margin: 0 !important;
+        margin-top: 3% !important;
+        margin-left: 10% !important;
+    }
+    div.footer-right{
+        margin: 0 !important;
+        margin-left: 10% !important;
+        text-align: left !important;
+    }
+    header{
+        margin-top:-64px !important;
+    }
+    main{
+        margin-top:64px !important;
+    }
+    div.btnVenhaConhecer {
+        margin-top: -20px;
+    }
+    section.venhaConhecerMainContainer p {
+        display: none;
+    }
+    section.venhaConhecerMainContainer h1 {
+        padding-bottom: 45px;
+        font-size: 28px;
+        line-height: 1.5;
+        overflow-wrap: break-word;
+        word-break: break-word;
+        white-space: pre-wrap;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+    section.venhaConhecerMainContainer {
+        width: auto;
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    h3.sobreNosTitle {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    div.contatoInformationDatas {
+        display: none !important;
+    }
+    div.contatoTitleContent{
+        width: 250px;
+        background: linear-gradient(to top, #fbc9a8 50%, #FFFFFF 50%);
+    }
+    p.contatoTitle{
+        font-size: 24px; 
+    }
+}
